@@ -774,10 +774,10 @@ $settings['migrate_node_migrate_type_classic'] = FALSE;
 
 $databases['default']['default'] = array (
   'database' => 'drupal',
-  'username' => 'root',
-  'password' => 'Root@123',
+  'username' => 'drupal',
+  'password' => 'drupaltest',
   'prefix' => '',
-  'host' => 'localhost',
+  'host' => 'database-1.cv8ytml8jbxq.us-east-1.rds.amazonaws.com',
   'port' => '3306',
   'namespace' => 'Drupal\\mysql\\Driver\\Database\\mysql',
   'driver' => 'mysql',
