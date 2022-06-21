@@ -249,7 +249,7 @@ $databases = [];
  *   $settings['hash_salt'] = file_get_contents('/home/example/salt.txt');
  * @endcode
  */
-$settings['hash_salt'] = '';
+$settings['hash_salt'] = 'TsulIoYKavunA8Y1HBFNH4dTqaji0COf8gnWcEgGgAPh_YDdTEWW6jsdwUhEe_91fOkSbCO4Sg';
 
 /**
  * Deployment identifier.
@@ -779,6 +779,8 @@ $databases['default']['default'] = array (
   'prefix' => '',
   'host' => 'database-1.cv8ytml8jbxq.us-east-1.rds.amazonaws.com',
   'port' => '3306',
-  'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
+  'namespace' => 'Drupal\\mysql\\Driver\\Database\\mysql',
   'driver' => 'mysql',
+  'autoload' => 'core/modules/mysql/src/Driver/Database/mysql/',
 );
+$settings['config_sync_directory'] = 'sites/default/files/config_Y1OVCCpxcGRyJaRUutvp60PulS4B9TLmfy4fRKd_c4dMK_qiizwlOiOhNtX_AQdKULJUz5iP8Q/sync';
